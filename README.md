@@ -3,14 +3,25 @@
 #### Project initiated: 
 #### By Saoud Rana
 ## Project Description
-
+Website created as a 4th Project at Epicodus for a Pizzaria.
 
 ## Specs
  
 ```
-Describe:
-Test: 
-Expect: 
+Describe: Pizza()
+Test: Should construct a pizza object, using the given arguments as values for size and toppings, and calculate resulting price in dollars
+Expect(new Pizza("large", ["Chicken", "Mushrooms", "Onions"]).toEquals(Pizza {size: "large", toppings: ["Chicken", "Mushrooms", "Onions"], price: 18 }))
+
+Describe: Pizza.prototype.calculatePrice()
+Test: Should calculate and return price of pizza using size and toppings properties, according to this formula:
+
+Base prices:
+Small: $10.00
+Medium: $12.00
+Large: $14.00
+
+Prices per topping:
+$1 toppings and $2 toppings regardless of size
  
 ```
  
@@ -19,11 +30,16 @@ Expect:
 * JQuery
 * HTML
 * CSS
+* GitHub
+* Gh-pages
+* VS Code
 
 ## Set up / Installation requirements
 * Open up a terminal and clone the repo 
 * Navigate to the folder containing the files from the repo and type `code . `
 * You can also use [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+* Or visit https://saoud.github.io/Project-4-Pizza-Website/
  
 ## Known Bugs
 * No known bugs
