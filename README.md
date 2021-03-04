@@ -39,7 +39,7 @@ $1 toppings and $2 toppings regardless of size
 * Navigate to the folder containing the files from the repo and type `code . `
 * You can also use [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-* Or visit https://saoud.github.io/Project-4-Pizza-Website/
+* Or visit https://saoud.github.io/Project-4-Pizza-Parlor/
  
 ## Known Bugs
 * No known bugs
