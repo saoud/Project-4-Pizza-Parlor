@@ -7,3 +7,41 @@
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
 </head>
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the pizza palace!</h1>
+  </div>
+    <form id="pizzaBuilder">
+      <div class="form-group">
+        <label for="size">What size pizza? This is the base price for a pizza this size with no additional toppings. Just sauce and cheese are included:</label>
+        <select class="form-control" id="size">
+          <option value="small">Small $10</option>
+          <option value="medium">Medium $12</option>
+          <option value="large">Large $14</option>        
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Pick as many toppings as you want. Each topping adds the listed price.</p>
+        <p>Veggies and Cheese are all $1 each</p>
+        <input type="checkbox" name="pizza-topping" value="onion,1">Onion $1<br>
+        <input type="checkbox" name="pizza-topping" value="spinach,1">Spinach $1<br>
+        <input type="checkbox" name="pizza-topping" value="olive,1">Olives $1<br>
+        <input type="checkbox" name="pizza-topping" value="green-pepper,1">Green Pepper $1<br>
+        <input type="checkbox" name="pizza-topping" value="mushroom,1">Mushroom $1<br>
+        <input type="checkbox" name="pizza-topping" value="tomato,1">Tomato $1<br>
+        <input type="checkbox" name="pizza-topping" value="garlic,1">Roasted Garlic $1<br>
+        <input type="checkbox" name="pizza-topping" value="pineapple,1">Pineapple $1<br>
+        <input type="checkbox" name="pizza-topping" value="extra-cheese,1">Extra Cheese $1<br><p></p>
+        <p>Meats are all $2 each:</p>
+        <input type="checkbox" name="pizza-topping" value="chicken,2">Chicken $2<br>
+        <input type="checkbox" name="pizza-topping" value="ground beef,2">Beef $2<br>
+        <input type="checkbox" name="pizza-topping" value="sausage,2">Sausage $2<br>
+        <input type="checkbox" name="pizza-topping" value="bacon,2">Bacon $2<br><p></p> 
+      </div>
+      <button type="submit">Submit order to see total</button>
+    </form>
+    <p id="order-total">The total price of your pizza is $<span id="pizza-price"></span> all prices include $2 graduity</p>
+  </div>
+  
+</body>
+</html>
