@@ -1,6 +1,6 @@
 # Title
-#### 
-#### Project initiated: 
+#### Pizza Ordering Website
+#### Project initiated: 2-27-2021
 #### By Saoud Rana
 ## Project Description
 Website created as a 4th Project at Epicodus for a Pizzaria.
@@ -48,6 +48,6 @@ $1 toppings and $2 toppings regardless of size
 
 ## License
 * [MIT](https://github.com/saoud/html-template/blob/main/LICENSE)
-* Copyright 2021 Saoud Rana
+* © 2021 Saoud Rana
 ## Contact
 Saoud Rana githubissues@saoud.dev
