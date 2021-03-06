@@ -1,26 +1,31 @@
 function Pizza(size) {
-    this.size = size;
-    this.toppings = {};
-  }
+  this.size = size;
+  this.toppings = {};
+}
+
+function Topping(name,price) {
+  this.name = name;
+  this.price = price;
+}
+Pizza.prototype.addTopping = function(topping) {
+  this.toppings[topping.name] = topping;
+}
+
+Pizza.prototype.pizzaPrice = function() {
+  let total = 2;
+  if (this.size === "small") {
+    total += 10;
+  } else if (this.size === "medium") {
+    total += 12;
+  } else if (this.size === "large") {
+    total += 14;
+  };
+
+  Object.keys(this.toppings).forEach(key => {
+    total += this.toppings[key].price;
+  });
   
-  function Topping(name,price) {
-    this.name = name;
-    this.price = price;
-  }
-  
-  Pizza.prototype.addTopping = function(topping) {
-    this.toppings[topping.name] = topping;
-  }
-  
-  Pizza.prototype.pizzaPrice = function() {
-    let total = 2;
-    if (this.size === "small") {
-      total += 10;
-    } else if (this.size === "medium") {
-      total += 12;
-    } else if (this.size === "large") {
-      total += 14;
-  }
+  return total;
 };
 
 $(document).ready(function() {
@@ -33,5 +38,8 @@ $(document).ready(function() {
       let newTopping = new Topping(toppingArray[0],parseFloat(toppingArray[1]));
       pizza.addTopping(newTopping);      
     });
+    const price = pizza.pizzaPrice().toFixed();
+    $("#pizza-price").text(price);
+    $("#order-total").show();
   });
-})
+});
